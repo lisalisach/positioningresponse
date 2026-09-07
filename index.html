@@ -422,7 +422,7 @@ html, body { width: 100%; height: 100%; background: #FAFBFE; display: flex; alig
     box.style.left = px(detailL, sx); box.style.top = px(gridTop, sy);
     box.style.width = px(detailW, sx);
     box.style.borderRadius = px(5, sx);
-    var padIn = 22, padBottom = 10;
+    var padIn = 22, padBottom = 38;
     box.querySelectorAll('.detail-pane').forEach(function (pane) {
       pane.style.left = px(padIn, sx); pane.style.top = px(padIn, sy);
       pane.style.right = px(padIn, sx); pane.style.bottom = 'auto'; pane.style.height = 'auto';
@@ -433,23 +433,23 @@ html, body { width: 100%; height: 100%; background: #FAFBFE; display: flex; alig
       tr.style.marginBottom = px(12, sy);
     });
     box.querySelectorAll('.detail-progress-label').forEach(function (lb) {
-      lb.style.fontSize = px(10, sx); lb.style.letterSpacing = '0.06em';
-      lb.style.marginBottom = px(12, sy);
+      lb.style.fontSize = px(9.5, sx); lb.style.letterSpacing = '0.06em';
+      lb.style.marginBottom = px(11, sy);
     });
     box.querySelectorAll('.detail-head').forEach(function (h) {
-      h.style.fontSize = px(26, sx); h.style.lineHeight = '1.15';
+      h.style.fontSize = px(23, sx); h.style.lineHeight = '1.15';
       h.style.letterSpacing = '-0.01em';
-      h.style.marginBottom = px(14, sy);
+      h.style.marginBottom = px(22, sy);
     });
     box.querySelectorAll('.detail-list').forEach(function (list) {
-      list.style.gap = px(13, sy);
+      list.style.gap = px(11, sy);
     });
     box.querySelectorAll('.detail-dot').forEach(function (d) {
-      d.style.width = px(7, sx); d.style.height = px(7, sy);
-      d.style.marginTop = px(5.5, sy); d.style.marginRight = px(10, sx);
+      d.style.width = px(6.5, sx); d.style.height = px(6.5, sy);
+      d.style.marginTop = px(5, sy); d.style.marginRight = px(9, sx);
     });
     box.querySelectorAll('.detail-text').forEach(function (t) {
-      t.style.fontSize = px(12, sx); t.style.lineHeight = '1.5';
+      t.style.fontSize = px(11, sx); t.style.lineHeight = '1.48';
     });
 
     /* Size the card to the tallest item's actual content rather than
